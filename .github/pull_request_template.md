@@ -4,8 +4,9 @@ _Link the Jira ticket this work came from._
 [TICKET-100](https://your-jira/browse/TICKET-100)
 
 ## PR Title 
-- At most 1 sentence
-- Prefixed correctly e.g. `feat:`, `fix:`, `docs:`. View the prefixes [here](https://github.com/Classward/.github/blob/main/pr_prefix_guidelines.md)
+At most 1 sentence
+
+Prefixed correctly e.g. `feat:`, `fix:`, `docs:`. View the prefixes [here](https://github.com/Classward/.github/blob/main/pr_prefix_guidelines.md)
 
 Example - BAD: `Fix bug in invoice system`
 
