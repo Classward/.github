@@ -3,10 +3,13 @@ _Link the Jira ticket this work came from._
 
 [TICKET-100](https://your-jira/browse/TICKET-100)
 
-## Labels
-_`type(scope): subject`. Keep them coarse, and only on critical systems where a breaking change affects profit flow._
+## PR Title 
+- At most 1 sentence
+- Prefixed correctly e.g. `feat:`, `fix:`, `docs:`. View the prefixes [here](https://github.com/Classward/.github/blob/main/pr_prefix_guidelines.md)
 
-feat(completion): payment
+Example - BAD: `Fix bug in invoice system`
+
+Example - GOOD: `Fix: misplaced decimal point miscalculates invoice subtotal`
 
 ## Context
 _~200 words: why this ticket exists. What tradeoffs did you weigh, and why this choice? Does it need an ADR? New or updated docs?_
