@@ -19,3 +19,10 @@ _Manual steps if they apply. One sentence per test added (or a summary block for
 
 ## Screenshots
 _Required if you are resolving something visual._
+
+## Etiquette
+- [ ] **LOC cap: 500** — an extreme upper bound, not a target.
+- [ ] The description and the committed code effectively explain and show what this PR is changing.
+- [ ] If the change had to exceed 500 lines, it was split into smaller PRs against an integration branch.
+- [ ] Opened as a draft and self-reviewed in the GitHub UI first.
+- [ ] Ran an AI code review before opening for review.
