@@ -1,6 +1,6 @@
 <!--
-  Drafting this description with an AI agent? Read ./AI PR Instructions.md first.
-  https://github.com/Classward/.github/blob/main/.github/AI%20PR%20Instructions.md
+  Drafting this description with an AI agent? Read ./ai_pr_guidelines.md first.
+  https://github.com/Classward/.github/blob/main/.github/ai_pr_guidelines.md
 
   Short version: delete the "PR Title" section below (it is guidance, not a section to fill),
   keep it brief, list only tradeoffs actually weighed, write "None." under Next Steps when
