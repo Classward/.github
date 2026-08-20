@@ -1,3 +1,12 @@
+<!--
+  Drafting this description with an AI agent? Read ./ai_pr_guidelines.md first.
+  https://github.com/Classward/.github/blob/main/.github/ai_pr_guidelines.md
+
+  Short version: delete the "PR Title" section below (it is guidance, not a section to fill),
+  keep it brief, list only tradeoffs actually weighed, write "None." under Next Steps when
+  there are none, and only tick etiquette boxes that are genuinely true.
+-->
+
 ## References
 _Link the Jira ticket this work came from._
 
