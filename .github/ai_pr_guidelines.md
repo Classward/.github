@@ -1,4 +1,4 @@
-# AI PR Instructions
+# AI PR Guidelines
 
 How to fill in [`pull_request_template.md`](./pull_request_template.md) when an AI agent is
 drafting the pull request description.
@@ -21,7 +21,7 @@ gh api repos/Classward/.github/contents/.github/pull_request_template.md --jq '.
 Fetch this instructions file the same way when you need it:
 
 ```bash
-gh api "repos/Classward/.github/contents/.github/AI PR Instructions.md" --jq '.content' | base64 -d
+gh api "repos/Classward/.github/contents/.github/ai_pr_guidelines.md" --jq '.content' | base64 -d
 ```
 
 ## Drop the `## PR Title` section from the body
