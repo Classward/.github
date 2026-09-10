@@ -39,3 +39,6 @@ _Required if you are resolving something visual._
 - [ ] If the change had to exceed 500 lines, it was split into smaller PRs against an integration branch.
 - [ ] Opened as a draft and self-reviewed in the GitHub UI first.
 - [ ] Ran an AI code review before opening for review.
+- [ ] (AI PR) The submitting developer has read this PR description in full before requesting a review.
+
+
