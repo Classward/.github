@@ -4,7 +4,8 @@
 
   Short version: delete the "PR Title" section below (it is guidance, not a section to fill),
   keep it brief, list only tradeoffs actually weighed, write "None." under Next Steps when
-  there are none, and only tick etiquette boxes that are genuinely true.
+  there are none, and only tick etiquette boxes that are genuinely true. A trivial change
+  (at most 10 lines, 2 files, no tests) keeps only Context and Etiquette.
 -->
 
 ## References

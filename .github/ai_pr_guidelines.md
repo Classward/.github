@@ -36,6 +36,24 @@ This is the only section that gets removed outright.
 The word counts in the template are ceilings, not targets. Most PRs need a few sentences per
 section. A long description is not a thorough one.
 
+## Trivial changes — Context and Etiquette only
+
+A diff is trivial when all three hold:
+
+- at most 10 lines changed in total (`git diff --numstat`, added plus deleted)
+- at most 2 files
+- none of them a test file
+
+A trivial change's body is `## Context`, then `## Etiquette` — with `## References` first only
+when a ticket, fault, or thread exists. Next Steps, Testing, and Screenshots are dropped rather
+than filled with `None.` and `N/A`: on a one-line fix each of them would only report an absence,
+and three headings saying nothing bury the two sentences that say something.
+
+Context is one or two sentences — what was wrong, what it does now. A tradeoff on a trivial
+change is a sign it isn't one.
+
+Over the threshold, every section stays.
+
 ## Context — only real tradeoffs
 
 List alternatives that were **actually weighed**. Never invent a rejected option to make the
@@ -69,7 +87,8 @@ Otherwise "N/A" with a short reason.
 
 ## Sections that do not apply get an explicit "N/A" plus a reason
 
-Never delete a section silently. The one exception is `## PR Title`, which is always removed.
+Never delete a section silently. `## PR Title` is always removed, and a trivial change drops
+Next Steps, Testing, and Screenshots (see above). Nothing else goes.
 
 ## No Jira ticket?
 
