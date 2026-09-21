@@ -65,10 +65,16 @@ what changed and why, then stop.
 Do not pad with deploy suggestions, follow-up ideas, or out-of-scope observations dressed up as
 next steps. This section is for work outside the code that someone actually has to do.
 
-## Testing — the tests, and manual steps only if a human must run them
+## Testing — the count, and what production has to check
 
-One line per test. Include manual steps only when the reviewer genuinely has to perform them to
-evaluate the PR; otherwise write "No manual steps."
+How many tests were added, not an inventory of what each one asserts — the reviewer can open the
+file. Skip the redundancy audit of neighbouring suites.
+
+Then name anything that could not be verified in development and therefore has to be watched once
+it ships. That part is worth its length; nothing else in this section is.
+
+Include manual steps only when the reviewer genuinely has to perform them to evaluate the PR;
+otherwise write "No manual steps."
 
 No RED/GREEN narration, no verification transcripts, no recounting of how the work was validated
 during development.

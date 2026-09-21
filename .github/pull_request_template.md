@@ -29,7 +29,7 @@ _~200 words: why this ticket exists. What tradeoffs did you weigh, and why this 
 _Anything this PR needs outside of code — tasks or updates on the server._
 
 ## Testing
-_Manual steps if they apply. One sentence per test added (or a summary block for a whole new file). Are these tests redundant with coverage up/downstream?_
+_How many tests were added, then anything that could not be verified in development and needs watching in production. Manual steps only if a reviewer has to run them._
 
 ## Screenshots
 _Required if you are resolving something visual._
