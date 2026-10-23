@@ -1,0 +1,26 @@
+name: branch-policy
+on:
+  workflow_call:
+
+jobs:
+  source-branch:
+    runs-on: ubuntu-latest
+    permissions: {}
+    steps:
+      - env:
+          # head_ref is user-controlled; pass via env, never interpolate into run
+          DST: ${{ github.base_ref }}
+          SRC: ${{ github.head_ref }}
+          SRC_REPO: ${{ github.event.pull_request.head.repo.full_name }}
+          REPO: ${{ github.repository }}
+        run: |
+          # a fork can name its branch release or hotfix/*, so the name alone proves nothing
+          if [ "$SRC_REPO" != "$REPO" ]; then
+            echo "::error::PRs into $DST must come from a branch in $REPO, not a fork"
+            exit 1
+          fi
+          case "$DST:$SRC" in
+            release:develop | release:qa-fix/* | main:release | main:hotfix/*) exit 0 ;;
+          esac
+          echo "::error::$SRC cannot merge into $DST"
+          exit 1
