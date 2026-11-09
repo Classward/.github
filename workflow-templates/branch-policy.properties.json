@@ -1,0 +1,4 @@
+{
+  "name": "Branch policy",
+  "description": "Fails a pull request into release or main when it comes from a branch that isn't allowed to merge there. To enforce it, add branch-policy / source-branch as a required check in the release and main rulesets."
+}

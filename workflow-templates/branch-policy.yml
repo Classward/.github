@@ -1,0 +1,12 @@
+name: branch-policy
+on:
+  pull_request:
+    branches: [release, main]
+    # edited fires on retarget; without it a result from the old base keeps counting
+    types: [opened, synchronize, reopened, edited]
+
+permissions: {}
+
+jobs:
+  branch-policy:
+    uses: Classward/.github/.github/workflows/branch-policy.yml@main
