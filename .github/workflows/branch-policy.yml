@@ -20,7 +20,7 @@ jobs:
             exit 1
           fi
           case "$DST:$SRC" in
-            release:develop | release:qa-fix/* | main:release | main:hotfix/*) exit 0 ;;
+            release:develop | release:development | release:qa-fix/* | main:release | main:hotfix/*) exit 0 ;;
           esac
           echo "::error::$SRC cannot merge into $DST"
           exit 1
